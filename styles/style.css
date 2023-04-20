@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFF6E3;
+}
+body header {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-around;
+  align-items: center;
+}
+body header .logo {
+  font-family: "K2D";
+  text-transform: capitalize;
+  font-size: 4em;
+  color: #865317;
+}
+body header .logo span {
+  font-family: "Karantina", cursive;
+  text-transform: uppercase;
+}
+body header form {
+  display: flex;
+  width: auto;
+  height: 2.5em;
+  border-radius: 0.8rem;
+  align-items: center;
+  background-color: whitesmoke;
+}
+body header form input {
+  background-color: #D9CBAF;
+  max-width: 40%;
+  min-width: 15rem;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+body header form input::-moz-placeholder {
+  padding-left: 12px;
+}
+body header form input::placeholder {
+  padding-left: 12px;
+}
+body header form button {
+  background-color: #4B7548;
+  color: #FFF6E3;
+  width: 8em;
+  height: 90%;
+  margin: 0.3%;
+  float: right;
+  border-radius: 0.8rem;
+}
+body header #menu p {
+  display: block;
+}
+body header #menu li {
+  display: none;
+}
+body header #menu:hover li {
+  display: block;
+  position: absolute;
+}
+body header #menu:hover li:nth-last-of-type(2) {
+  margin-top: 3em;
+}
+body header #menu:hover li:nth-last-of-type(3) {
+  margin-top: 6em;
+}
+body main h1 {
+  font-size: 7em;
+  width: 45rem;
+  margin-left: 15%;
+  font-family: "Mako", sans-serif;
+  color: #865317;
+  line-height: 130px;
+  margin-top: 6rem;
+}
+body main h1::first-letter {
+  text-transform: uppercase;
+}
+body .main-aside {
+  position: absolute;
+  top: 11rem;
+  right: 18%;
+}
+body .main-aside #rmp {
+  color: #D49C2F;
+  font-family: "Mukta", sans-serif;
+  text-transform: capitalize;
+  font-size: 2em;
+  width: 180px;
+}
+body .main-aside .therapist-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(186, 168, 133, 0.2);
+  width: 160px;
+  height: 212px;
+  border-radius: 23px;
+  padding: 15px;
+}
+body .main-aside .therapist-card img {
+  border-radius: 23px;
+}
+body .main-aside .therapist-card #info {
+  font-weight: 400;
+  font-size: 7px;
+  margin: 4px;
+  opacity: 0.6;
+}
+body .main-aside .therapist-card p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 10px;
+  margin: 8px;
+  color: #154711;
+}
+body .main-aside .therapist-card #info::after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #4B7548;
+}
+body #flownav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  height: 8rem;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  color: #4B7548;
+}
+body #flownav .next-page {
+  font-family: "Mako", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+body #flownav button {
+  background-color: transparent;
+}
+body #flownav .other-page {
+  font-family: "Mako", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */
