@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFF6E3;
+}
+body header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-around;
+  align-items: center;
+}
+body header .logo {
+  font-family: "K2D";
+  text-transform: capitalize;
+  font-size: 4em;
+  color: #865317;
+}
+body header .logo span {
+  font-family: "Karantina", cursive;
+  text-transform: uppercase;
+}
+body header form {
+  display: flex;
+  width: auto;
+  height: 2.5em;
+  border-radius: 0.8rem;
+  align-items: center;
+  background-color: whitesmoke;
+}
+body header form input {
+  background-color: #D9CBAF;
+  max-width: 40%;
+  min-width: 15rem;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+body header form input::-moz-placeholder {
+  padding-left: 12px;
+}
+body header form input::placeholder {
+  padding-left: 12px;
+}
+body header form button {
+  background-color: #4B7548;
+  color: #FFF6E3;
+  width: 8em;
+  height: 90%;
+  margin: 0.3%;
+  float: right;
+  border-radius: 0.8rem;
+}
+body header #menu p {
+  display: block;
+}
+body header #menu li {
+  display: none;
+}
+body header #menu:hover li {
+  display: block;
+  position: absolute;
+}
+body header #menu:hover li:nth-last-of-type(2) {
+  margin-top: 3em;
+}
+body header #menu:hover li:nth-last-of-type(3) {
+  margin-top: 6em;
+}
+body main {
+  margin-top: 10rem;
+}
+body main h1 {
+  font-size: 7em;
+  width: 45rem;
+  margin-left: 15%;
+  font-family: "Mako", sans-serif;
+  color: #865317;
+  line-height: 130px;
+}
+body main h1::first-letter {
+  text-transform: uppercase;
+}
+body .main-aside {
+  position: absolute;
+  top: 11rem;
+  right: 18%;
+}
+body .main-aside #rmp {
+  color: #D49C2F;
+  font-family: "Mukta", sans-serif;
+  text-transform: capitalize;
+  font-size: 2em;
+  width: 180px;
+}
+body .main-aside .therapist-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(186, 168, 133, 0.2);
+  width: 160px;
+  height: 212px;
+  border-radius: 23px;
+  padding: 15px;
+}
+body .main-aside .therapist-card img {
+  border-radius: 23px;
+}
+body .main-aside .therapist-card #info {
+  font-weight: 400;
+  font-size: 7px;
+  margin: 4px;
+  opacity: 0.6;
+}
+body .main-aside .therapist-card p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 10px;
+  margin: 8px;
+  color: #154711;
+}
+body .main-aside .therapist-card #info::after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #4B7548;
+}
+body .viewone {
+  display: block;
+}
+body .between {
+  background-color: #154711;
+  width: 100%;
+  height: 10rem;
+  margin: 35rem 0;
+}
+body .viewtwo {
+  display: flex;
+  padding: 5% 15%;
+}
+body .viewtwo div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .viewtwo div p {
+  width: 43%;
+  font-size: 2.8em;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  text-align: end;
+  color: #4B7548;
+}
+body .viewtwo div img {
+  width: 55%;
+}
+body .pt, body .ptx {
+  position: fixed;
+  width: auto;
+  height: 10rem;
+}
+body .pt img, body .ptx img {
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+  transition: all 1.5s;
+}
+body .pt img:hover, body .ptx img:hover {
+  box-shadow: 0px 0px 50px #154711;
+  transition: all 500ms;
+  transform: scale(1.2);
+}
+body .pt {
+  bottom: 40px;
+}
+body .ptx {
+  bottom: 40px;
+  margin-left: 200px;
+}
+body .ptx img {
+  transform: rotate(180deg);
+}
+body .ptx img:hover {
+  transform: rotate(180deg);
+  scale: 1.2;
+}
+body footer {
+  display: none;
+}
+
+[data-tittle]:hover:after {
+  transition: ease-in 1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+[data-tittle]:after {
+  content: attr(data-tittle);
+  background-color: tomato;
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: "Mako", sans-serif;
+  position: absolute;
+  padding: 3px 20px;
+  white-space: nowrap;
+  left: 0.3em;
+  bottom: 3.5em;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+
+[data-tittle] {
+  position: relative;
+}
+
+#mainav, scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#mainav {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid tomato;
+}
+
+scroll-container {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
